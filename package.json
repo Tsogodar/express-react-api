@@ -1,0 +1,29 @@
+{
+  "name": "react-api",
+  "version": "1.0.0",
+  "description": "API using in React learning project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./configs/server.js",
+    "watch": "nodemon ./configs/server -q"
+  },
+  "keywords": [
+    "API",
+    "REST",
+    "Express",
+    "MongoDB"
+  ],
+  "author": "Marcin Gryczon",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.16.4",
+    "body-parser": "1.18.3",
+    "cors": "2.8.5",
+    "mongoose": "5.5.2",
+    "jsonwebtoken": "8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.11",
+    "morgan": "1.9.1"
+  }
+}

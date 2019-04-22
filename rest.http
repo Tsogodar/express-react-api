@@ -1,0 +1,25 @@
+# GET http://localhost:5000
+
+# POST http://localhost:5000/todo/create HTTP/1.1
+# content-type: application/json
+
+# {
+# 	"tile": "Test",
+# 	"description": "Test desc",
+# 	"endDate": "2019-04-21",
+# 	"status": "in progress"
+# }
+
+# DELETE  http://localhost:5000/todo/delete/5cbe1ba8dd77db056480f211 HTTP/1.1
+
+# PUT http://localhost:5000/todo/update/5cbe231c9edd58236432e46c HTTP/1.1
+# content-type: application/json
+
+# {
+# 	"tile": "Test edit",
+# 	"description": "Test desc",
+# 	"endDate": "2019-04-21",
+# 	"status": "in progress"
+# }
+
+# GET http://localhost:5000/todo
