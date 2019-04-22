@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
 		const response = await model.read();
 		res.send(response);
 	} catch (e) {
-		console.log(e);
+		res.send(e);
 	}
 });
 
@@ -22,9 +22,9 @@ router.post('/create', async (req, res) => {
 });
 
 router.delete('/delete/:uid', async (req, res) => {
-	const uid = req.params.uid;
+	const id = req.params.uid;
 	try {
-		const response = await model.delete(uid);
+		const response = await model.delete(id);
 		res.send(response);
 	} catch (e) {
 		res.send(e);
@@ -33,9 +33,9 @@ router.delete('/delete/:uid', async (req, res) => {
 
 router.put('/update/:uid', async (req, res) => {
 	const newTodoObj = req.body;
-	const uid = req.params.uid;
+	const id = req.params.uid;
 	try {
-		const response = await model.update(uid, newTodoObj);
+		const response = await model.update(id, newTodoObj);
 		res.send(response);
 	} catch (e) {
 		res.send(e);

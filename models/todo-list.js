@@ -11,11 +11,11 @@ module.exports = {
 		return await model.find();
 	},
 
-	delete: async uid => {
-		return await model.findByIdAndDelete(uid);
+	delete: async id => {
+		return await model.findByIdAndDelete(id);
 	},
 
-	update: async (uid, data) => {
-		return await model.findByIdAndUpdate(uid, data);
+	update: async (id, data) => {
+		return await model.findByIdAndUpdate(id, data);
 	}
 };
