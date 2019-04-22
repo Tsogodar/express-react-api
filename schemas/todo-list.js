@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const schema = mongoose.Schema({
-	tile: {
+	title: {
 		type: String,
 		required: true
 	},

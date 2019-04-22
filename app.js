@@ -13,6 +13,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use('/', require('./controllers/main.controller.js'));
-app.use('/todo', require('./controllers/todolist/todolist.controller.js'));
+app.use('/todo', require('./controllers/todo-list/todo-list.controller.js'));
 
 module.exports = app;

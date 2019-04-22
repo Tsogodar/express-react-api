@@ -4,7 +4,7 @@
 # content-type: application/json
 
 # {
-# 	"tile": "Test",
+# 	"title": "Test",
 # 	"description": "Test desc",
 # 	"endDate": "2019-04-21",
 # 	"status": "in progress"
@@ -16,7 +16,7 @@
 # content-type: application/json
 
 # {
-# 	"tile": "Test edit",
+# 	"title": "Test edit",
 # 	"description": "Test desc",
 # 	"endDate": "2019-04-21",
 # 	"status": "in progress"
